@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A simple Login Page Project, designed by Rocketseat">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Login Page, Rocketseat">
+    <meta name="author" content="Henrique Delben">
+    <title>Página de Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="index.js" async></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main">
+        <div class="main__login">
+            <figure class="main__logo">
+                <img src="assets/logo.svg" alt="Logo">
+            </figure>
+
+            <div class="form">
+                <div class="form__title">
+                    <h1>Acesse a plataforma</h1>
+                    <p>
+                        Faça login ou registre-se para começar a construir seus projetos ainda hoje.
+                    </p>
+                </div>
+
+                <form action="#" class="form__form">
+                    <div class="form__element">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" class="form__input" placeholder="Digite seu e-mail" required>
+                        <p class="form__error-message form__email-message"></p>
+                    </div>
+                    
+                    <div class="form__element">
+                        <div class="form__password-label-wrapper">
+                            <label for="password">Senha</label>
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+
+                        <div class="form__password-eye-wrapper">
+                            <input type="password" name="password" id="password" class="form__input" minlength="16" placeholder="Digite sua senha" required>
+                            <p class="form__error-message form__password-message"></p>
+
+                            <img src="assets/eye-off.svg" alt="hide password button" class="eye" onclick="togglePassword()">
+                            
+                            <img src="assets/eye-on.svg" alt="show password button" class="eye hide" onclick="togglePassword()">
+                        </div>
+                        
+                    </div>
+                    
+                    <input type="submit" value="Entrar" class="form__button">
+                </form>
+
+                <p>Ainda não tem uma conta? <a href="#">Inscreva-se</a></p>
+            </div>
+        </div>
+    </main>
+    <img class="bg" src="./assets/bg.jpg" alt="Background Image">
+</body>
+</html>
